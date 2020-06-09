@@ -18,4 +18,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run Unit tests
-      run: ./gradlew connectedAndroidTest
+      run: ./gradlew testdebugUnitTest
+#    - name: Run UI tests
+#      run: ./gradlew connectedAndroidTest
