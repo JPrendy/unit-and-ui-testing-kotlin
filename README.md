@@ -20,5 +20,5 @@ Code here
 The following link provides an intro on how you can use Kotlin with Android including the Java examples
 - [link](https://developer.android.com/kotlin/get-started).
 
-The following link provides an intro on how you can use Kotlin with Android including the Java examples
-- [link](https://developer.android.com/kotlin/get-started).
+A good guide for writing espresso tests in Kotlin
+- [link](https://www.raywenderlich.com/949489-espresso-testing-and-screen-robots-getting-started).
