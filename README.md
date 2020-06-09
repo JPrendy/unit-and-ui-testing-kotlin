@@ -1,4 +1,4 @@
-# template-repository
+# Unit and Ui testing us
 
 ## Description
 
@@ -17,5 +17,8 @@ Code here
 
 ## Helpful resources
 
-The following link provides helpful information
-- [link](https://github.com/JPrendy/template-repository).
+The following link provides an intro on how you can use Kotlin with Android including the Java examples
+- [link](https://developer.android.com/kotlin/get-started).
+
+The following link provides an intro on how you can use Kotlin with Android including the Java examples
+- [link](https://developer.android.com/kotlin/get-started).
