@@ -1,5 +1,10 @@
 package com.example.unit_and_ui_testing_kotlin
 
+import androidx.test.core.app.ActivityScenario
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 
@@ -20,5 +25,17 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.unit_and_ui_testing_kotlin", appContext.packageName)
+    }
+
+    @Test
+    fun checkTextIsChangedWhenButtonIsPressed() {
+
+        ActivityScenario.launch(MainActivity::class.java)
+
+        onView(withId(R.id.welcomeButton))
+            .perform(click())
+
+//        onView(withText(R.id.helloWorldText))
+//            .check(matches(isDisplayed()))
     }
 }
