@@ -11,7 +11,6 @@ The following is a project that uses Kotlin and has unit and ui tests written in
 - [How to run the project locally](#how-to-run-the-project-locally)
 - [Helpful resources](#helpful-resources)
 
-
 ## Setup Steps
 
 To setup Android for espresso tests, go to the `app/build.gradle` and add the following and then sync the gradle
@@ -28,7 +27,7 @@ androidTestImplementation 'androidx.test.ext:junit:1.1.0'
 
 ## How to run the project locally
 
-To run the unit tests locally
+To run the unit tests locally.
 
 ```
 ./gradlew testdebugUnitTest
