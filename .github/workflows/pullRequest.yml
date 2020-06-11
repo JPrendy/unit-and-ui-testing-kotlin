@@ -23,5 +23,8 @@ jobs:
       run: bundle exec fastlane test
     - name: Run Unit tests
       run: ./gradlew testdebugUnitTest
-#    - name: Run UI tests
-#      run: ./gradlew connectedAndroidTest
+    - name: Android Emulator Runner
+      uses: ReactiveCircus/android-emulator-runner@v1.0.2
+      with:
+        api-level: 28
+        script: ./gradlew connectedCheck
