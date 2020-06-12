@@ -13,12 +13,19 @@ The following is a project that uses Kotlin and has unit and ui tests written in
 
 ## Setup Steps
 
-To setup Android for espresso tests, go to the `app/build.gradle` and add the following and then sync the gradle
+To setup Android for espresso tests, go to the `app/build.gradle` and add the following and then sync the gradle.
 
 ```
 androidTestImplementation 'androidx.test:rules:1.1.1'
 androidTestImplementation 'androidx.test.ext:truth:1.1.0'
 androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+```
+
+Update the `AndroidManifest.xml`.
+
+```
+<activity android:name=".SecondActivity"
+    android:parentActivityName=".MainActivity"/>
 ```
 
 ## Tools
@@ -52,3 +59,6 @@ Another guide on how to write espresso tests in Kotlin
 
 Guide for how to use Fastlane to run tests.
 - [link](https://docs.fastlane.tools/getting-started/android/running-tests/).
+
+A helpful guide for how to use Intents in Kotlin, plus how to avoid using set setOnClickListener.
+- [link](https://developer.android.com/training/basics/firstapp/starting-activity#kotlin).

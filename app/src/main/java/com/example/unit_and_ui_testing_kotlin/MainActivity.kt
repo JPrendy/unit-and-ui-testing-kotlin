@@ -1,7 +1,10 @@
 package com.example.unit_and_ui_testing_kotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.AlarmClock.EXTRA_MESSAGE
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,4 +25,16 @@ class MainActivity : AppCompatActivity() {
         val personResponse = person.greeting()
         text.text = personResponse
     }
+
+    //Don't forget to update `AndroidManifest.xml
+    //    <activity android:name=".SecondActivity"
+    //    android:parentActivityName=".MainActivity"/>
+
+    //    We don't need to add an setOnClickListener because we added `android:onClick="sendMessage"` in `activity_main.xml`
+    fun sendMessage(view: View) {
+        val message = "String from Main Activity"
+        val intent = Intent(this, SecondActivity::class.java)
+        startActivity(intent)
+    }
+
 }
