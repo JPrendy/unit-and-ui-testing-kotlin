@@ -22,10 +22,10 @@ jobs:
     - name: Install Dependencies
       run: bundle install
 
-    - name: Run Unit tests via Fastlane
+    - name: Run unit tests via Fastlane
       run: bundle exec fastlane test
 
-    - name: Run Unit tests
+    - name: Run unit tests
       run: ./gradlew testdebugUnitTest
 
     - name: Android Emulator Runner
